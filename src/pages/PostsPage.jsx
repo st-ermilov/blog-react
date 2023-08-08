@@ -58,9 +58,9 @@ function PostsPage() {
                 <CreatePostForm getNewPost={createPost}/>
             </StandardModal>
             <PostSearchAndFilter filter={filter} setFilter={setFilter}/>
-            {isLoading
-                ? <StandardLoader/>
-                : <PostList deletePost={deletePost} postsItems={sortedAndSearchedPosts} title='Posts list'/>}
+            <PostList deletePost={deletePost} postsItems={sortedAndSearchedPosts} title='Posts list'/>
+            {isLoading && <StandardLoader/>
+            }
             <StandardPagination pagesArray={pagesArray}
                                 currentPage={page}
                                 setCurrentPage={setPage}
