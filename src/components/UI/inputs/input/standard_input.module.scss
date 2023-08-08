@@ -1,0 +1,11 @@
+.input {
+  padding: 5px 10px;
+  border: 1px solid saddlebrown;
+  border-radius: 4px;
+  font-family: Helvetica;
+  text-align: center;
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}

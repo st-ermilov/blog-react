@@ -1,0 +1,12 @@
+.textarea {
+  text-align: center;
+  border: 1px solid saddlebrown;
+  border-radius: 4px;
+  font-family: Helvetica;
+  padding-top: 20px;
+  min-height: 60px;
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}

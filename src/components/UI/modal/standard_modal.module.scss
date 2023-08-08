@@ -1,0 +1,28 @@
+.modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 500ms ease;
+
+}
+
+.modal_content {
+  display: flex;
+  padding: 20px 70px;
+  background: bisque;
+  border-radius: 12px;
+
+}
+
+.modal_container.show {
+  visibility: visible;
+  opacity: 1;
+}

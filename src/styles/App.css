@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+
+.post-enter {
+    transform: translateY(-100px);
+}
+
+.post-enter-active {
+    transform: translateY(0px);
+    transition: all 400ms ease-in;
+}
+
+.post-exit {
+    transform: translateY(0px);
+}
+
+.post-exit-active {
+    transform: translateY(-100px);
+    transition: all 400ms ease-in;
+}

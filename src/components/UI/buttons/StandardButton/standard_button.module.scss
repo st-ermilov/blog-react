@@ -1,0 +1,25 @@
+.btn {
+  padding: 10px 20px;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid saddlebrown;
+  font-family: Helvetica;
+  font-size: 14px;
+  justify-self: center;
+
+  &:hover {
+    background: bisque;
+  }
+}
+
+.active_btn {
+  background: saddlebrown;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid saddlebrown;
+  font-family: Helvetica;
+  font-size: 14px;
+}
