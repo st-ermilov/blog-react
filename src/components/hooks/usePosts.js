@@ -1,6 +1,7 @@
 import React from "react";
 
-
+/* Хук для сортировки постов в ленте по алфавиту, принимает в качестве параметров массив данных
+* объект для сравнения. Используется мемоизация для предотвращения многократного ре-рендеринга компонента */
 export const useSortedPosts = (posts, sort) => {
     const sortedPosts = React.useMemo(() => {
         if (sort) {
@@ -12,6 +13,8 @@ export const useSortedPosts = (posts, sort) => {
     return sortedPosts
 }
 
+/* Хук для обеспечения процессов сортировки постов в алфавитном порядке, а также
+* поиска по массиву постов. Используется мемоизация. */
 export const usePosts = (posts, sort, search) => {
     const sortedPosts = useSortedPosts(posts, sort)
 

@@ -4,8 +4,11 @@ import {Link} from 'react-router-dom'
 import StandardButton from "../buttons/StandardButton/StandardButton";
 import {AuthContext} from "../../../context";
 
+/* Компонент навигационной панели с ссылками на доступные страницы и элементом, меняюшим состояние
+* isAuth с "выходом ползьзователя" из приватного роутинга */
 const Navigation = () => {
     const {isAuth, setIsAuth} = React.useContext(AuthContext)
+    /* Функция, меняющая состояния isAuth и изменяющая localStorage */
     const logout = () => {
         setIsAuth(false)
         localStorage.removeItem('auth')

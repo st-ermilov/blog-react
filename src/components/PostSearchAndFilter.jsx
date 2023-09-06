@@ -3,6 +3,8 @@ import StandardInput from "./UI/inputs/input/StandardInput";
 import PostSelect from "./UI/select/PostSelect";
 import styles from '../styles/post_search_and_filter.module.scss'
 
+/* Компонент, в котором находится функционал для осуществления поиска по массиву постов
+* и сортировки массива в алфавитном порядке (по названию/по тексту поста) */
 const PostSearchAndFilter = ({filter, setFilter}) => {
     return (
         <div className={styles.search_container}>

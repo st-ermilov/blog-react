@@ -3,6 +3,9 @@ import styles from '../styles/post.module.scss'
 import StandardButton from "./UI/buttons/StandardButton/StandardButton";
 import {useNavigate} from "react-router-dom"
 
+/* Компонент, в котором находится шаблон для отображения конкретного поста
+* в ленте постов, а также функционал, который позволяет удалить этот пост либо перейти
+* на "индивидуальную" страницу этого поста*/
 const Post = (props) => {
     const navigate = useNavigate()
 

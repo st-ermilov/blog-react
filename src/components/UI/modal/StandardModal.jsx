@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './standard_modal.module.scss'
 
+/* Компонент открытия/закрытия модального окна, путём добавления/удаления необходимого CSS-класса
+* из массива стилей */
 const StandardModal = ({children, visible, setVisible}) => {
     const modalStyles = [styles.modal_container]
     if (visible) {

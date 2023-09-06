@@ -4,8 +4,10 @@ import AppRouter from "./components/AppRouter";
 import {AuthContext} from "./context";
 
 function App() {
+    /* состояние для процесса аутентификации  */
     const [isAuth, setIsAuth] = React.useState(false)
 
+    /* проверка на аутентификацию при первом запуске приложения */
     React.useEffect(() => {
         if (localStorage.getItem('auth')) {
             setIsAuth(true)

@@ -1,5 +1,6 @@
 import React from 'react';
 
+/* Компонент для выбора алфавитной сортировки по заголовку/тексту поста*/
 const PostSelect = ({options, defaultValue, value, onChange}) => {
     return (
         <select value={value} onChange={(e) => onChange(e.target.value)}>

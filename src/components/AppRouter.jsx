@@ -6,6 +6,9 @@ import {privateRoutes, publicRoutes} from "../router/routes";
 import Auth from "../pages/Auth";
 import {AuthContext} from "../context";
 
+/* Компонент для роутинга в зависимости от состояния isAuth - то есть была ли выполнена
+* аутентификация пользователся в системе - в зависимости от этого доступны либо публичные,
+* либо приватые маршруты по ресурсу. */
 const AppRouter = () => {
     const {isAuth} = React.useContext(AuthContext)
     return (

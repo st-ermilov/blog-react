@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from '../styles/not_found.module.scss'
 
+
+/* Компонент "Ошибочной страницы", когда в адресной строке неизвестный адрес/маршрут - осуществляется
+* переход сюда */
 const NotFound = () => {
     return (
         <div className={styles.not_found}>

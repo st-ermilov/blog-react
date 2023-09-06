@@ -2,6 +2,8 @@ import React from 'react';
 import Post from "./Post";
 import {CSSTransition, TransitionGroup} from 'react-transition-group'
 
+/* Компонент, в котором создаётся лента постов, а также находится функционал для
+* создания анимации (конкрентнее - transition) добавления/удаления поста из ленты */
 const PostList = ({postsItems, title, deletePost}) => {
 
     if (!postsItems.length) {

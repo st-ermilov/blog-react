@@ -6,10 +6,15 @@ import StandardButton from "./UI/buttons/StandardButton/StandardButton";
 
 import styles from "../styles/create_post_form.module.scss"
 
+/* Компонент, в котором находится функционал для создания и добавления в массив нового поста */
 const CreatePostForm = ({getNewPost}) => {
 
+    /* состояния для создания шаблона новго поста */
     const [newPost, setNewPost] = React.useState({title: '', body: ''})
 
+
+    /* коллбэк-функция для возврата данных в виде созданного поста в родительский компонент PostsPage
+    * и добалвения его в общий массив постов*/
     const addNewPost = (e) => {
         e.preventDefault()
         const createdPost = {
@@ -17,7 +22,6 @@ const CreatePostForm = ({getNewPost}) => {
         }
         getNewPost(createdPost)
         setNewPost({title: '', body: ''})
-
     }
 
     return (

@@ -4,8 +4,14 @@ import StandardButton from "../components/UI/buttons/StandardButton/StandardButt
 import styles from '../styles/auth.module.scss'
 import {AuthContext} from "../context";
 
+/* Компонент страницы аутентификации пользователся */
 const Auth = () => {
+    /* извлекаем состояние из контекста */
     const {setIsAuth} = React.useContext(AuthContext)
+
+    /* Функция "входа в систему" - изменяет состояние isAuth и добалвет в localStorage необходимую запись
+    * об успешной аутентификации, для предотвращения выхода пользователся из состояния "опознанного"
+    * при обновлении приложения */
     const login = (e) => {
         e.preventDefault()
         setIsAuth(true)

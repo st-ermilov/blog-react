@@ -1,5 +1,6 @@
 import React from 'react';
 
+/* Компонент страницы About */
 const About = () => {
     return (
         <div>
